@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futuristic Candy Calculator</title>
+  <link rel="stylesheet" href="cal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="splash">
+        <h1>✨ Futuristic Candy Calc ✨</h1>
+        <p>Loading...</p>
+      </div>
+    
+      <div class="calculator hidden">
+  <div class="calculator">
+    <div class="top-bar">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" aria-label="Toggle theme" />
+        <span class="slider"></span>
+      </label>
+      <span>Theme</span>
+      <label class="switch">
+        <input type="checkbox" id="soundToggle" checked aria-label="Toggle sound" />
+        <span class="slider"></span>
+      </label>
+      <span>Sound</span>
+    </div>
+
+    <div id="display" class="display">0</div>
+
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button data-fn="C">C</button>
+      <button data-fn="⌫">⌫</button>
+      <button data-fn="(">(</button>
+      <button data-fn=")">)</button>
+
+      <!-- Row 2 -->
+      <button data-fn="sin">sin</button>
+      <button data-fn="cos">cos</button>
+      <button data-fn="tan">tan</button>
+      <button data-fn="π">π</button>
+
+      <!-- Row 3 -->
+      <button data-fn="log">log</button>
+      <button data-fn="x²">x²</button>
+      <button data-fn="√">√</button>
+      <button data-fn="%">%</button>
+
+      <!-- Row 4 -->
+      <button data-fn="7">7</button>
+      <button data-fn="8">8</button>
+      <button data-fn="9">9</button>
+      <button data-fn="/">÷</button>
+
+      <!-- Row 5 -->
+      <button data-fn="4">4</button>
+      <button data-fn="5">5</button>
+      <button data-fn="6">6</button>
+      <button data-fn="*">×</button>
+
+      <!-- Row 6 -->
+      <button data-fn="1">1</button>
+      <button data-fn="2">2</button>
+      <button data-fn="3">3</button>
+      <button data-fn="-">−</button>
+
+      <!-- Row 7 -->
+      <button data-fn="0">0</button>
+      <button data-fn=".">.</button>
+      <button data-fn="=">=</button>
+      <button data-fn="+">+</button>
+
+      <!-- Row 8 - Memory -->
+      <button data-fn="MR">MR</button>
+      <button data-fn="M+">M+</button>
+      <button data-fn="M-">M-</button>
+      <button data-fn="MC">MC</button>
+
+      <!-- History toggle -->
+      <button data-fn="history">H</button>
+    </div>
+
+    <div id="historyLog" class="history-log hidden">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+  </div>
+
+  <script src="cal.js"></script>
+</body>
+</html>
